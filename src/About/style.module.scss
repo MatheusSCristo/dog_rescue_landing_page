@@ -4,11 +4,13 @@
     padding: 100px 5%;
     display: flex;
     justify-content: space-around;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 990px) {
         flex-direction: column;
     }
 
     .text_wrapper {
+        z-index: 1;
+        position: relative;
         width: 700px;
         @media screen and (max-width: 768px) {
             width: 100%;
