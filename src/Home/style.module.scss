@@ -1,0 +1,60 @@
+@import "../colors";
+
+.section_container {
+    position: relative;
+    background-color:$backgroundColor ;
+    padding: 1% 5%;
+ 
+    .wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .empty_box1{
+        z-index: 0;
+        top: 0;
+        left: 30%;
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        transform: rotate(45deg);
+        border: 10px solid #c1d1d1;
+        border-radius: 50px;
+    }
+    .empty_box2 {
+        z-index: 0;
+        bottom:5%;
+        left: -5%;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        transform: rotate(45deg);
+        border: 10px solid #c1d1d1;
+        border-radius: 50px;
+    }
+
+    .fill_box1{
+        z-index: 0;
+        top: 20%;
+        left: -2%;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        transform: rotate(45deg);
+        background-color: #c1d1d1;
+        border-radius: 20px;
+    }
+    .fill_box2{
+        z-index: 0;
+        bottom: 20%;
+        left: 30%;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        transform: rotate(25deg);
+        background-color: #c1d1d1;
+        border-radius: 20px;
+    }
+}

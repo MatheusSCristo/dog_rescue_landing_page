@@ -1,0 +1,51 @@
+@import "../../../colors";
+.text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+
+    .title_wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h1{
+            font-size: 6rem;
+            font-weight: 700;
+            margin: 0px;
+            line-height: 100%;
+        }
+    }
+
+    .subtitle_wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h2{
+            font-size: 1.2rem;
+            color: $subtitleColor;
+            font-weight: 400;
+            margin: 2px;
+            line-height: 100%;
+        }
+    }
+    .adopt_button{
+        background-color: $buttonColor;
+        border: none;
+        border-radius: 40px;
+        width: 300px;
+        height: 60px;
+        color: white;
+        font-size: 1.2rem;
+        transition: background-color 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $titleColor;
+            color: $subtitleColor;
+
+        }
+    }
+
+}

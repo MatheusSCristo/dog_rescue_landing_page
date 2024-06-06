@@ -1,3 +1,9 @@
+@import "colors";
+
 .main_container{
-    padding: 1% 5%;
+    position: relative;
+
+    h1{
+        color: $titleColor;
+    }
 }

@@ -9,11 +9,11 @@ const Header = () => {
     <div className={styles.header}>
         <div className={styles.text_container}>
             <h1>DOG</h1>
-            <img src='/logo/rescue_dog_logo.jpg' alt='logo' />
+            <img src='/logo/rescue_dog_logo.png' alt='logo' />
             <h1>RESCUE</h1>
         </div>
         <div className={styles.icon_container}>
-            <FaLinkedinIn size={25}/>
+            <FaLinkedinIn size={25} />
             <FaFacebookF size={25}/>
             <FaXTwitter size={25}/>
             <RiInstagramFill size={25}/>
@@ -21,5 +21,4 @@ const Header = () => {
     </div>
   )
 }
-
 export default Header

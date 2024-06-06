@@ -1,6 +1,10 @@
+@import "../../../colors";
+
 .header{
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    z-index: 1;
 
     .text_container{
         display: flex;  
@@ -9,20 +13,26 @@
         h1{
             letter-spacing:5px;
         }
-
         img{
-            width: 50px;
-            height: 50px;
+            transform: rotate(30deg);
+            width: 35px;
+            height: 35px;
         }
     }
     .icon_container{
         display: flex;
         align-items: center;
         gap: 20px;
-        
         svg{
+            color: $buttonColor;
             width: 20px;
             height: 20px;
+            transition: scale 0.5s ease-out;
+            &:hover{
+                scale: 0.9;
+                color: $titleColor;
+            }
+
         }
     }
 }
