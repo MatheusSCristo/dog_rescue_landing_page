@@ -1,8 +1,9 @@
 .card_container {
     display: flex;
     flex-direction: column;
-    
-    .hover_info_wrapper{
+    gap: 20px;
+
+    .hover_info_wrapper {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -11,11 +12,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        p{
+
+        p {
             text-align: center;
             font-size: 1rem;
         }
-        button{
+
+        button {
             cursor: pointer;
             position: absolute;
             bottom: 10px;
@@ -25,21 +28,23 @@
             background-color: transparent;
             color: white;
             transition: all 0.5s ease-in;
-            &:hover{
+
+            &:hover {
                 background-color: #c5d6d6;
                 font-weight: bold;
-                color: black ;
+                color: black;
             }
         }
     }
-    
-    
+
+
     .image_wrapper {
+        border: 1px solid black;
         overflow-y: hidden;
         position: relative;
         display: flex;
         flex-direction: column;
-        
+
         img {
             width: 300px;
             height: 300px;
@@ -61,10 +66,22 @@
             display: flex;
             align-items: baseline;
             gap: 5px;
-            h3{
-                color: #827f7f;
-            }
-        }
 
+            h2 {
+                @media screen and (max-width:990px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            h3 {
+                color: #827f7f;
+
+                @media screen and (max-width:990px) {
+                    font-size: 1rem;
+                }
+
+            }
+
+        }
     }
 }
