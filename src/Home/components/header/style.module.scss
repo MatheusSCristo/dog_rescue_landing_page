@@ -1,34 +1,48 @@
 @import "../../../colors";
 
-.header{
+.header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
+    position: relative;
 
-    .text_container{
-        display: flex;  
+    .text_container {
+        display: flex;
         gap: 10px;
         align-items: center;
-        h1{
-            letter-spacing:5px;
+
+        h1 {
+            letter-spacing: 5px;
+            @media screen and (max-width: 768px) {
+                font-size: 0.7rem;
+            }
         }
-        img{
+
+        img {
             transform: rotate(30deg);
             width: 35px;
             height: 35px;
+
+            @media screen and (max-width: 768px) {
+                width: 20px;
+                height: 20px
+            }
         }
     }
-    .icon_container{
+
+    .icon_container {
         display: flex;
         align-items: center;
         gap: 20px;
-        svg{
+
+        svg {
             color: $buttonColor;
             width: 20px;
             height: 20px;
             transition: scale 0.5s ease-out;
-            &:hover{
+
+            &:hover {
                 scale: 0.9;
                 color: $titleColor;
             }

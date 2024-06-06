@@ -7,10 +7,21 @@
             div {
                 border: 40px solid #AEC0C0;
                 background-color: #AEC0C0;
-            }
-            
 
-           
+                img{
+                    @media screen and (max-width: 990px) {
+                        width: 300px;
+                        height: 300px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 200px;
+                        height: 200px;
+            
+                    }
+                }
+                
+            }
+          
         }
 
     }

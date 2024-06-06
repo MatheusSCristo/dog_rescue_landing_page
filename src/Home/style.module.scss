@@ -2,17 +2,24 @@
 
 .section_container {
     position: relative;
-    background-color:$backgroundColor ;
+    background-color: $backgroundColor ;
     padding: 1% 5%;
- 
+
     .wrapper {
         position: relative;
         z-index: 1;
         display: flex;
         justify-content: space-around;
+
+        @media screen and (max-width: 990px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+ 
+         }
     }
 
-    .empty_box1{
+    .empty_box1 {
         z-index: 0;
         top: 0;
         left: 30%;
@@ -22,10 +29,17 @@
         transform: rotate(45deg);
         border: 10px solid #c1d1d1;
         border-radius: 50px;
+
+        @media screen and (max-width: 768px) {
+            width: 200px;
+            height: 200px;
+
+        }
     }
+
     .empty_box2 {
         z-index: 0;
-        bottom:5%;
+        bottom: 5%;
         left: -5%;
         position: absolute;
         width: 300px;
@@ -33,9 +47,14 @@
         transform: rotate(45deg);
         border: 10px solid #c1d1d1;
         border-radius: 50px;
+        @media screen and (max-width: 768px) {
+            width: 200px;
+            height: 200px;
+
+        }
     }
 
-    .fill_box1{
+    .fill_box1 {
         z-index: 0;
         top: 20%;
         left: -2%;
@@ -45,8 +64,14 @@
         transform: rotate(45deg);
         background-color: #c1d1d1;
         border-radius: 20px;
+        @media screen and (max-width: 768px) {
+            width: 50px;
+            height: 50px;
+
+        }
     }
-    .fill_box2{
+
+    .fill_box2 {
         z-index: 0;
         bottom: 20%;
         left: 30%;
@@ -56,5 +81,10 @@
         transform: rotate(25deg);
         background-color: #c1d1d1;
         border-radius: 20px;
+        @media screen and (max-width: 768px) {
+            width: 50px;
+            height: 50px;
+
+        }
     }
 }

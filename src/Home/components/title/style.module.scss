@@ -1,36 +1,59 @@
 @import "../../../colors";
-.text_container{
+
+.text_container {
+    padding: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+    align-items: center;
 
 
-    .title_wrapper{
+    .title_wrapper {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        h1{
+
+        h1 {
             font-size: 6rem;
             font-weight: 700;
             margin: 0px;
             line-height: 100%;
+
+            @media screen and (max-width: 990px) {
+               font-size: 4rem;
+    
+            }
+
+
+            @media screen and (max-width: 768px) {
+                font-size: 3rem;
+                text-align: center;
+
+            }
         }
     }
 
-    .subtitle_wrapper{
+    .subtitle_wrapper {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        h2{
+
+        h2 {
             font-size: 1.2rem;
             color: $subtitleColor;
             font-weight: 400;
             margin: 2px;
             line-height: 100%;
+
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                margin: 0px;
+            }
         }
     }
-    .adopt_button{
+
+    .adopt_button {
         background-color: $buttonColor;
         border: none;
         border-radius: 40px;
@@ -40,7 +63,7 @@
         font-size: 1.2rem;
         transition: background-color 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-        &:hover{
+        &:hover {
             background-color: transparent;
             border: 1px solid $titleColor;
             color: $subtitleColor;
