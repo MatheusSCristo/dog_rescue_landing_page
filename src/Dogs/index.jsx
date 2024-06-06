@@ -10,7 +10,7 @@ const Dogs = () => {
       <h1>Esses doguinhos estão esperando por você!</h1>
       <div className={styles.items_list}>
         {dogs.map((dog, index) => (
-          <Card key={dog.id} dog={dog} index={index} />
+          <Card key={dog.name} dog={dog} index={index} />
         ))}
       </div>
       <h2>Ainda não se apaixonou?</h2>

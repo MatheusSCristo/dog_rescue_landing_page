@@ -6,14 +6,12 @@ import Title from "./components/title";
 import styles from "./style.module.scss";
 
 const Home = () => {
-  const { scrollYProgress } = useScroll();
-  const emptybox1=useTransform(scrollYProgress,[0,1],[45,60]);
-  const emptybox2=useTransform(scrollYProgress,[0,1],[45,60]);
-  const fillbox1=useTransform(scrollYProgress,[0,1],[45,-30]);
-  const fillbox2=useTransform(scrollYProgress,[0,1],[25,80]);
+  const { scrollY } = useScroll();
+  const emptybox1=useTransform(scrollY,[0,300],[45,90]);
+  const emptybox2=useTransform(scrollY,[0,300],[45,120]);
+  const fillbox1=useTransform(scrollY,[0,300],[45,-30]);
+  const fillbox2=useTransform(scrollY,[0,300],[25,80]);
   
-
-
   return (
     <section className={styles.section_container}>
       <Header />
