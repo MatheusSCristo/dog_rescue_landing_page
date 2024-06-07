@@ -1,0 +1,96 @@
+@import "../colors";
+
+
+.adopt_container{
+    overflow: hidden;
+    position: relative;
+    background-color: #E6EAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+
+    div{
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    h1{
+        font-size: 5rem;
+        @media screen and (max-width: 990px){
+            font-size: 3rem;
+            
+        }
+    }
+    p{
+        z-index: 1;
+        position: relative;
+        width: 600px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: $subtitleColor;
+        @media screen and (max-width:990px) {
+            width: 100%;
+        }
+    }
+
+    button {
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+        padding: 20px 30px;
+        background-color: $buttonColor;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            color: black;
+            border: 1px solid black;
+        }
+    }
+    .fill_box {
+            z-index: 0;
+            bottom: 0;
+            right: -10%;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            transform: rotate(35deg);
+            background-color: #c1d1d1;
+            border-radius: 20px;
+            @media screen and (max-width: 768px) {
+                width: 50px;
+                height: 50px;
+                left: 80%;
+                right: 20%;
+
+            }
+        }
+
+        .empty_box {
+            z-index: 0;
+            top: 0%;
+            left: -10%;
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            transform: rotate(15deg);
+            background-color: transparent;
+            border-radius: 20px;
+            border: 10px solid #c1d1d1;
+            @media screen and (max-width: 768px) {
+                width: 150px;
+                height: 150px;
+
+            }   
+        }
+}

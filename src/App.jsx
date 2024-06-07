@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import About from "./About";
+import Adopt from "./Adopt";
 import Dogs from "./Dogs";
 import Home from "./Home";
 import styles from "./app.module.scss";
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <Dogs/>
       <About/>
+      <Adopt/>
     </main>
   );
 }
